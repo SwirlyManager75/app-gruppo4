@@ -52,7 +52,7 @@ def index():
 
 @app.route('/watermark', methods=['POST'])
 def apply_watermark():
-    bucket_name = "secchiellino2" # INSERT YOUR BUCKET NAME
+    bucket_name = "secchiellino" # INSERT YOUR BUCKET NAME
 
     filename = request.form['filename']
     path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
